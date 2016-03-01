@@ -1,0 +1,153 @@
+/* --------------------------
+base styles 
+-------------------------- */
+
+body
+{
+	margin: 0;
+	padding: 0;
+	color: #000;
+	background: #fff;
+	font: 1em/1.2 helvetica, arial, sans-serif;
+}
+
+h1
+{
+	margin: 0;
+	font-size: 1.5em;
+	font-weight: 500;
+}
+
+h2,h3
+{
+	margin: 0 0 1em;
+	font-size: 1.3em;
+	font-weight: 500;
+}
+
+p
+{
+	margin: 0 0 1.5em;
+	line-height: 1.5;
+}
+
+/* --------------------------
+layout 
+-------------------------- */
+
+.header
+{
+	background-color: #ccc;
+	padding: 1em;
+}
+
+.nav-bar
+{
+	color: #fff;
+	background-color: #000;
+}
+
+.content { padding: 1em; }
+.main { margin-bottom: 1em; }
+.aside { margin-bottom: 1em; }
+
+.footer
+{
+	clear: both;
+	padding: 1em;
+	background-color: #ccc;
+}
+
+/* --------------------------
+nav 
+-------------------------- */
+
+.nav
+{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.nav li
+{
+	display: inline;
+	margin: 0;
+}
+
+.nav a
+{
+	display: block;
+	padding: .7em 1.25em;
+	color: #fff;
+	text-decoration: none;
+	border-bottom: 1px solid gray;
+}
+
+.nav a:link { color: white; }
+.nav a:visited { color: white; }
+
+.nav a:focus
+{
+	color: black;
+	background-color: white;
+}
+
+.nav a:hover
+{
+	color: white;
+	background-color: green;
+}
+
+.nav a:active
+{
+	color: white;
+	background-color: red;
+}
+
+/* --------------------------
+wide screen 
+-------------------------- */
+
+@media (min-width:1000px)
+{
+	.header { padding: 1em 5%; }
+	.nav-bar { padding: 1em 5%; }
+	
+	.nav li
+	{
+		display: inline;
+		margin: 0 1em 0 0;
+	}
+	
+	.nav a
+	{
+		display: inline;
+		padding: 0;
+		border-bottom: 0;
+	}
+	
+	.content
+	{
+		overflow: hidden;
+		padding: 2em 0 1em;
+	}
+	
+	.main
+	{
+		overflow: hidden;
+		margin: 0 5% 1em 5%;
+	}
+	
+	.aside
+	{
+		float: left;
+/*		width: 200px; */
+		width: 650px;
+		margin-left: 2em;
+		margin-right: 5%;
+		margin-bottom: 1em;
+	}
+	
+	.footer { padding: 1em 5%; }
+}
